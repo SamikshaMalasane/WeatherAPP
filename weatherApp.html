@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(sunset-and-golden-clouds-above-the-sea-free-photo.webp) center/cover no-repeat;;
+            height: 800px;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:url(img2.webp)center/cover no-repeat;;
+            height: 400px;
+            width: 500px;
+            text-align: center;
+            border-radius: 60px;
+            border: 3px solid rgb(247, 88, 88);
+        }
+        .info-container{
+            font-size: 20px;
+        }
+        #city{
+            height: 30px;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid;
+
+        }
+        .btn{
+            height: 35px;
+            width: 90px;
+            border-radius: 15px;
+            border: 2px solid;
+            font-size: 15px;
+        }
+        .btn:hover{
+            border-color:rgb(156, 114, 9);
+            background-color: rgb(247, 211, 163);
+        }
+        #city:hover{
+            background-color: rgb(247, 211, 163);
+            border-color: rgb(156, 114, 9);
+        }
+        #output{
+            background-color: aliceblue;
+            height: 60px;
+            margin-top: 20px;
+            border-radius: 30px;
+            text-align: center;
+            padding-top: 30px;
+            background-color: rgb(246, 215, 175);
+            border: 2px solid rgb(156, 114, 9);;
+            
+            
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+            <h1>Weather</h1>
+            <input type="text" placeholder="City" id="city">
+            <button class="btn" id="btn">Submit</button>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="weatherApp.js"></script>
+</body>
+</html>
